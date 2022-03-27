@@ -10,6 +10,7 @@ class Routes {
   static String lifeCycle = "/lifeCycle";
   static String tipRoute = "/tipRoute";
   static String text = "/text";
+  static String button = "/button";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -21,5 +22,6 @@ class Routes {
     router.define(lifeCycle, handler: lifeCycleHandler);
     router.define(tipRoute, handler: tipRouteHandler);
     router.define(text, handler: textHandler);
+    router.define(button, handler: buttonHandler);
   }
 }

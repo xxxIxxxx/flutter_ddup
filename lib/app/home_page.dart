@@ -47,7 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   transition: TransitionType.native);
             },
             child: const Text("Text 文本及样式"),
-          )
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.button,
+                  transition: TransitionType.native);
+            },
+            child: const Text("按钮"),
+          ),
         ],
       ),
     );

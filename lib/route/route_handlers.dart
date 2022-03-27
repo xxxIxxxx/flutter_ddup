@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
+import '../class/按钮/button_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
 
 var homeHandler = Handler(
@@ -30,4 +31,9 @@ var tipRouteHandler = Handler(
 var textHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const TextPage();
+});
+
+var buttonHandler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ButtonPage();
 });
