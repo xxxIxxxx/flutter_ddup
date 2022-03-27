@@ -2,9 +2,8 @@
 
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ddup/route/routes.dart';
-
 import '../class/widget生命周期/counter_life_cycle_page.dart';
+import 'package:flutter_ddup/route/routes.dart';
 import 'application.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -41,6 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
             child: const Text("路由传值"),
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.text,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Text 文本及样式"),
           )
         ],
       ),

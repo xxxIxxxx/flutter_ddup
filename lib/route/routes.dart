@@ -9,6 +9,7 @@ class Routes {
   static String home = "/";
   static String lifeCycle = "/lifeCycle";
   static String tipRoute = "/tipRoute";
+  static String text = "/text";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -19,5 +20,6 @@ class Routes {
     router.define(home, handler: homeHandler);
     router.define(lifeCycle, handler: lifeCycleHandler);
     router.define(tipRoute, handler: tipRouteHandler);
+    router.define(text, handler: textHandler);
   }
 }
