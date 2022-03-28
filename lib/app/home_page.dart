@@ -62,6 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("图片"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.switchs,
+                  transition: TransitionType.native);
+            },
+            child: const Text("单选开关复选开关"),
+          ),
         ],
       ),
     );
