@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
+import 'package:flutter_ddup/class/UnconstrainedBox%E3%80%81ConstrainedBox%E3%80%81SizedBox%20%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/constraints_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/单选开关复选开关/switch_page.dart';
@@ -8,7 +9,7 @@ import '../class/图片/image_page.dart';
 import '../class/按钮/button_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
 import '../class/输入框及表单/text_field_page.dart';
-import '../class/进度指示器/Progress_page.dart';
+import '../class/进度指示器/progress_page.dart';
 
 var homeHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
@@ -60,4 +61,9 @@ var textFieldHandeler = Handler(
 var progressHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ProgressPage();
+});
+
+var constraintsHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ConstraintsPage();
 });
