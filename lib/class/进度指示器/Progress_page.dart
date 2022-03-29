@@ -11,7 +11,9 @@ class ProgressPage extends StatefulWidget {
 class _ProgressPageState extends State<ProgressPage>
     with SingleTickerProviderStateMixin {
   double _progress = 0.0;
+  // 定时器
   Timer? _timer;
+  // 动画controller
   late AnimationController _animationController;
 
   @override
