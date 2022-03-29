@@ -69,6 +69,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("单选开关复选开关"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.textField,
+                  transition: TransitionType.native);
+            },
+            child: const Text("输入框及表单"),
+          ),
         ],
       ),
     );
