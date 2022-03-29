@@ -7,6 +7,7 @@ import '../class/单选开关复选开关/switch_page.dart';
 import '../class/图片/image_page.dart';
 import '../class/按钮/button_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
+import '../class/输入框及表单/text_field_page.dart';
 
 var homeHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
@@ -47,5 +48,10 @@ var imageHandler = Handler(
 
 var switchHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-  return SwitchPage();
+  return const SwitchPage();
+});
+
+var textFieldHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const TextFieldPage();
 });

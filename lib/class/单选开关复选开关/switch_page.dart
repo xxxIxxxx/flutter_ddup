@@ -1,9 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class SwitchPage extends StatefulWidget {
-  static const String routeName = '/switch';
+  const SwitchPage({Key? key}) : super(key: key);
 
   @override
   _SwitchPageState createState() => _SwitchPageState();
