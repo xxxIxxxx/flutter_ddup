@@ -14,6 +14,7 @@ class Routes {
   static String image = "/image";
   static String switchs = "/switchs";
   static String textField = "/textField";
+  static String progress = "/progress";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -29,5 +30,6 @@ class Routes {
     router.define(image, handler: imageHandler);
     router.define(switchs, handler: switchHandler);
     router.define(textField, handler: textFieldHandeler);
+    router.define(progress, handler: progressHandeler);
   }
 }

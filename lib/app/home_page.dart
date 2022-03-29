@@ -76,6 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("输入框及表单"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.progress,
+                  transition: TransitionType.native);
+            },
+            child: const Text("进度滑块"),
+          ),
         ],
       ),
     );

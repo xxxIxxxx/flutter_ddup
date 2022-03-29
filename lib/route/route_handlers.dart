@@ -8,6 +8,7 @@ import '../class/图片/image_page.dart';
 import '../class/按钮/button_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
 import '../class/输入框及表单/text_field_page.dart';
+import '../class/进度指示器/Progress_page.dart';
 
 var homeHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
@@ -54,4 +55,9 @@ var switchHandler = Handler(
 var textFieldHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const TextFieldPage();
+});
+
+var progressHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ProgressPage();
 });
