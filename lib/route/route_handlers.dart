@@ -4,6 +4,7 @@ import 'package:flutter_ddup/app/home_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/UnconstrainedBox,ConstrainedBox,SizedBox约束布局/constraints_page.dart';
+import '../class/Warp,Flow流式布局/warp_flow_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/单选开关复选开关/switch_page.dart';
 import '../class/图片/image_page.dart';
@@ -78,4 +79,9 @@ var rowColumnHandeler = Handler(
 var flexExpandedHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const FlexExpandedPage();
+});
+
+var warpFlowHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const WarpFlowPage();
 });

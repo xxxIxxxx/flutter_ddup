@@ -102,7 +102,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   transition: TransitionType.inFromTop);
             },
             child: const Text("Flex Expanded Spacer 弹性布局"),
-          )
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.warpFlow,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Warp Flow 流式布局"),
+          ),
         ],
       ),
     );

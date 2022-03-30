@@ -18,6 +18,7 @@ class Routes {
   static String constraints = "/constraints";
   static String rowColumn = "/rowColumn";
   static String flexExpanded = "/flexExpanded";
+  static String warpFlow = "/warpFlow";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -37,5 +38,6 @@ class Routes {
     router.define(constraints, handler: constraintsHandeler);
     router.define(rowColumn, handler: rowColumnHandeler);
     router.define(flexExpanded, handler: flexExpandedHandeler);
+    router.define(warpFlow, handler: warpFlowHandeler);
   }
 }
