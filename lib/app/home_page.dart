@@ -124,6 +124,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Align Center 对齐与相对定位"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.layoutBuilder,
+                  transition: TransitionType.native);
+            },
+            child: const Text("LayoutBuilder 获取父组件传递的约束信息"),
+          ),
         ],
       ),
     );
