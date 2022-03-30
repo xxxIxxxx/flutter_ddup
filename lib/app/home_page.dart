@@ -117,6 +117,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Stack Positioned 层叠布局"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.alignCenter,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Align Center 对齐与相对定位"),
+          ),
         ],
       ),
     );

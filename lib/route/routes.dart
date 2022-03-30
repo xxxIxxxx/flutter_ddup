@@ -20,6 +20,7 @@ class Routes {
   static String flexExpanded = "/flexExpanded";
   static String warpFlow = "/warpFlow";
   static String stackPositioned = "/stackPositioned";
+  static String alignCenter = "/alignCenter";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -41,5 +42,6 @@ class Routes {
     router.define(flexExpanded, handler: flexExpandedHandeler);
     router.define(warpFlow, handler: warpFlowHandeler);
     router.define(stackPositioned, handler: stackPositionedHandeler);
+    router.define(alignCenter, handler: alignCenterHandeler);
   }
 }

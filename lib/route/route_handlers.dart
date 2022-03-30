@@ -1,6 +1,8 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
+
+import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Text文本及样式/text_page.dart';
@@ -90,4 +92,9 @@ var warpFlowHandeler = Handler(
 var stackPositionedHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const StackPositionedPage();
+});
+
+var alignCenterHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const AlignCenterPage();
 });
