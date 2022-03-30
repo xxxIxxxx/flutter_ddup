@@ -110,6 +110,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Warp Flow 流式布局"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.stackPositioned,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Stack Positioned 层叠布局"),
+          ),
         ],
       ),
     );

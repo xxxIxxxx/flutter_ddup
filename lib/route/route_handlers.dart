@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
+import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/UnconstrainedBox,ConstrainedBox,SizedBox约束布局/constraints_page.dart';
 import '../class/Warp,Flow流式布局/warp_flow_page.dart';
@@ -84,4 +85,9 @@ var flexExpandedHandeler = Handler(
 var warpFlowHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const WarpFlowPage();
+});
+
+var stackPositionedHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const StackPositionedPage();
 });
