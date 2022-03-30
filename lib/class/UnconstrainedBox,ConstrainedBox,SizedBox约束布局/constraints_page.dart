@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ddup/class/UnconstrainedBox%E3%80%81ConstrainedBox%E3%80%81SizedBox%20%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/constraints2_page.dart';
+import 'constraints2_page.dart';
 
 class ConstraintsPage extends StatefulWidget {
   const ConstraintsPage({Key? key}) : super(key: key);
