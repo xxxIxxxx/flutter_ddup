@@ -85,10 +85,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           TextButton(
               onPressed: () {
-                Application.router.navigateTo(context, Routes.constraints);
+                Application.router.navigateTo(context, Routes.constraints,
+                    transition: TransitionType.inFromLeft);
               },
               child:
                   const Text("UnconstrainedBox、ConstrainedBox、SizedBox 约束布局")),
+          TextButton(
+              onPressed: () {
+                Application.router.navigateTo(context, Routes.rowColumn,
+                    transition: TransitionType.fadeIn);
+              },
+              child: const Text("Row Column 线性布局")),
         ],
       ),
     );
