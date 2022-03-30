@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
 import 'package:flutter_ddup/class/%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80Row,Column/row_page.dart';
 import 'package:flutter_ddup/class/UnconstrainedBox%E3%80%81ConstrainedBox%E3%80%81SizedBox%20%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/constraints_page.dart';
+import '../class/Flex,Expanded弹性布局/flex_expanded_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/单选开关复选开关/switch_page.dart';
@@ -72,4 +73,9 @@ var constraintsHandeler = Handler(
 var rowColumnHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const RowPage();
+});
+
+var flexExpandedHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const FlexExpandedPage();
 });

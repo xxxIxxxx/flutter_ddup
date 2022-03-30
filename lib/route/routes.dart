@@ -17,6 +17,7 @@ class Routes {
   static String progress = "/progress";
   static String constraints = "/constraints";
   static String rowColumn = "/rowColumn";
+  static String flexExpanded = "/flexExpanded";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -35,5 +36,6 @@ class Routes {
     router.define(progress, handler: progressHandeler);
     router.define(constraints, handler: constraintsHandeler);
     router.define(rowColumn, handler: rowColumnHandeler);
+    router.define(flexExpanded, handler: flexExpandedHandeler);
   }
 }

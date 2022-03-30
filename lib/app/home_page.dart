@@ -96,6 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     transition: TransitionType.fadeIn);
               },
               child: const Text("Row Column 线性布局")),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.flexExpanded,
+                  transition: TransitionType.inFromTop);
+            },
+            child: const Text("Flex Expanded Spacer 弹性布局"),
+          )
         ],
       ),
     );
