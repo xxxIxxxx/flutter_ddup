@@ -139,6 +139,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Padding 填充"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.decoratedBox,
+                  transition: TransitionType.native);
+            },
+            child: const Text("DecoratedBox 装饰容器"),
+          ),
         ],
       ),
     );
