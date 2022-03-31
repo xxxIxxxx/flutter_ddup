@@ -26,6 +26,7 @@ class Routes {
   static String decoratedBox = "/decoratedBox";
   static String transform = "/transform";
   static String container = "/container";
+  static String clip = "/clip";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -53,5 +54,6 @@ class Routes {
     router.define(decoratedBox, handler: decoratedBoxHandeler);
     router.define(transform, handler: transformRotatedHandeler);
     router.define(container, handler: containerHandeler);
+    router.define(clip, handler: clipHandeler);
   }
 }

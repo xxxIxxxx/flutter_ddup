@@ -160,6 +160,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Container 大佬组件啊"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.clip,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Clip 剪切"),
+          ),
         ],
       ),
     );

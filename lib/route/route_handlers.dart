@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
+import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
 import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
@@ -126,4 +127,9 @@ var transformRotatedHandeler = Handler(
 var containerHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ContainerPage();
+});
+
+var clipHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ClipPage();
 });
