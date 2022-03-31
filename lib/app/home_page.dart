@@ -21,6 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('主页'),
       ),
       body: ListView(
+        padding: const EdgeInsets.fromLTRB(18, 18, 18, 60),
         children: [
           TextButton(
               onPressed: (() {
@@ -130,6 +131,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   transition: TransitionType.native);
             },
             child: const Text("LayoutBuilder 获取父组件传递的约束信息"),
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.padding,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Padding 填充"),
           ),
         ],
       ),

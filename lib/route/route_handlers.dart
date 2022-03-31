@@ -4,6 +4,7 @@ import 'package:flutter_ddup/app/home_page.dart';
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
+import '../class/Padding填充/padding_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/UnconstrainedBox,ConstrainedBox,SizedBox约束布局/constraints_page.dart';
@@ -102,4 +103,9 @@ var alignCenterHandeler = Handler(
 var layoutBuilderHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const LayoutBuilderPage();
+});
+
+var paddingHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const PaddingPage();
 });

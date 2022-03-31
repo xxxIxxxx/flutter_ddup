@@ -22,6 +22,7 @@ class Routes {
   static String stackPositioned = "/stackPositioned";
   static String alignCenter = "/alignCenter";
   static String layoutBuilder = "/layoutBuilder";
+  static String padding = "/padding";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -45,5 +46,6 @@ class Routes {
     router.define(stackPositioned, handler: stackPositionedHandeler);
     router.define(alignCenter, handler: alignCenterHandeler);
     router.define(layoutBuilder, handler: layoutBuilderHandeler);
+    router.define(padding, handler: paddingHandeler);
   }
 }
