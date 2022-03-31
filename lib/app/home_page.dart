@@ -146,6 +146,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("DecoratedBox 装饰容器"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.transform,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Transform RotatedBox 变换 旋转 缩放"),
+          ),
         ],
       ),
     );
