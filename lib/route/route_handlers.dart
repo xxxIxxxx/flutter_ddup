@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
+
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
@@ -13,6 +14,7 @@ import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builde
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
+import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Switch,Checkbox单选开关复选开关/switch_page.dart';
 import '../class/TextField,Form输入框及表单/text_field_page.dart';
@@ -138,4 +140,9 @@ var clipHandeler = Handler(
 var fittedBoxHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const FittedBoxPage();
+});
+
+var scaffoldAppBarHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ScaffoldAppBarPage();
 });

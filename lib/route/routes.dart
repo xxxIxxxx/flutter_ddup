@@ -28,6 +28,7 @@ class Routes {
   static String container = "/container";
   static String clip = "/clip";
   static String fittedBox = "/fittedBox";
+  static String scaffoldAppBar = "/ScaffoldAppBar";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -57,5 +58,6 @@ class Routes {
     router.define(container, handler: containerHandeler);
     router.define(clip, handler: clipHandeler);
     router.define(fittedBox, handler: fittedBoxHandeler);
+    router.define(scaffoldAppBar, handler: scaffoldAppBarHandeler);
   }
 }

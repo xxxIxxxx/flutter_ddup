@@ -176,6 +176,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("FittedBox 空间适配"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.scaffoldAppBar,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar"),
+          ),
         ],
       ),
     );
