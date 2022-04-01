@@ -6,6 +6,7 @@ import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
 import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart';
 import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/button_page.dart';
+import '../class/FittedBox空间适配/fitted_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/Image图片/image_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
@@ -132,4 +133,9 @@ var containerHandeler = Handler(
 var clipHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ClipPage();
+});
+
+var fittedBoxHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const FittedBoxPage();
 });

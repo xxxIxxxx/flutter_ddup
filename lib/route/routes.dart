@@ -27,6 +27,7 @@ class Routes {
   static String transform = "/transform";
   static String container = "/container";
   static String clip = "/clip";
+  static String fittedBox = "/fittedBox";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -55,5 +56,6 @@ class Routes {
     router.define(transform, handler: transformRotatedHandeler);
     router.define(container, handler: containerHandeler);
     router.define(clip, handler: clipHandeler);
+    router.define(fittedBox, handler: fittedBoxHandeler);
   }
 }

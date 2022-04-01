@@ -54,35 +54,37 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.button,
                   transition: TransitionType.native);
             },
-            child: const Text("按钮"),
+            child: const Text(
+                "ElevatedButton,TextButton,OutlinedButton,IconButton按钮"),
           ),
           TextButton(
             onPressed: () {
               Application.router.navigateTo(context, Routes.image,
                   transition: TransitionType.native);
             },
-            child: const Text("图片"),
+            child: const Text("Image图片"),
           ),
           TextButton(
             onPressed: () {
               Application.router.navigateTo(context, Routes.switchs,
                   transition: TransitionType.native);
             },
-            child: const Text("单选开关复选开关"),
+            child: const Text("Switch,Checkbox单选开关复选开关"),
           ),
           TextButton(
             onPressed: () {
               Application.router.navigateTo(context, Routes.textField,
                   transition: TransitionType.native);
             },
-            child: const Text("输入框及表单"),
+            child: const Text("TextField,Form输入框及表单"),
           ),
           TextButton(
             onPressed: () {
               Application.router.navigateTo(context, Routes.progress,
                   transition: TransitionType.native);
             },
-            child: const Text("进度滑块"),
+            child: const Text(
+                "LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器"),
           ),
           TextButton(
               onPressed: () {
@@ -166,6 +168,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   transition: TransitionType.native);
             },
             child: const Text("Clip 剪切"),
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.fittedBox,
+                  transition: TransitionType.native);
+            },
+            child: const Text("FittedBox 空间适配"),
           ),
         ],
       ),
