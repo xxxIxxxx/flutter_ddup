@@ -11,6 +11,7 @@ import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/Image图片/image_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
+import '../class/ListView/list_view_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
 import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
@@ -150,4 +151,9 @@ var scaffoldAppBarHandeler = Handler(
 var singleChildScrollViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const SingleChildScrollViewPage();
+});
+
+var listViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ListViewPage();
 });

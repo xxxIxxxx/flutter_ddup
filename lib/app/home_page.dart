@@ -192,6 +192,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("SingleChildScrollView 单个子组件的滚动视图，没有延迟加载"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.listView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("ListView 列表视图"),
+          ),
         ],
       ),
     );
