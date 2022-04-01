@@ -1,7 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddup/app/home_page.dart';
-
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
@@ -15,6 +14,7 @@ import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度�
 import '../class/Padding填充/padding_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
 import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
+import '../class/SingleChildScrollView不会延迟加载的滚动View/single_child_scroll_view_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Switch,Checkbox单选开关复选开关/switch_page.dart';
 import '../class/TextField,Form输入框及表单/text_field_page.dart';
@@ -145,4 +145,9 @@ var fittedBoxHandeler = Handler(
 var scaffoldAppBarHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ScaffoldAppBarPage();
+});
+
+var singleChildScrollViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const SingleChildScrollViewPage();
 });

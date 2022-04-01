@@ -181,7 +181,16 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.scaffoldAppBar,
                   transition: TransitionType.native);
             },
-            child: const Text("Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar"),
+            child: const Text(
+                "Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar"),
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(
+                  context, Routes.singleChildScrollView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("SingleChildScrollView 单个子组件的滚动视图，没有延迟加载"),
           ),
         ],
       ),
