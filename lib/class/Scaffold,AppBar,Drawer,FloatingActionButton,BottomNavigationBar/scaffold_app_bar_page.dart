@@ -36,11 +36,19 @@ class _ScaffoldAppBarPageState extends State<ScaffoldAppBarPage> {
       actions: [
         IconButton(
           icon: const Icon(Icons.share),
-          onPressed: () {},
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+              content: Text("data"),
+            ));
+          },
         ),
         IconButton(
           icon: const Icon(Icons.search),
-          onPressed: () {},
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+              content: Text("data"),
+            ));
+          },
         ),
       ],
     );
