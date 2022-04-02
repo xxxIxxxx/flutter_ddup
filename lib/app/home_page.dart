@@ -199,6 +199,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("ListView 列表视图"),
           ),
+          TextButton(
+              onPressed: () {
+                Application.router.navigateTo(context, Routes.scrollController,
+                    transition: TransitionType.native);
+              },
+              child: const Text(
+                  "ScrollController, ScrollPosition, NotificationListener滚动监听")),
         ],
       ),
     );

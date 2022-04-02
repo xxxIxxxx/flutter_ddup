@@ -15,6 +15,7 @@ import '../class/ListView/list_view_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
 import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
+import '../class/ScrollController,ScrollPosition,NotificationListener滚动监听/scroll_controller_page.dart';
 import '../class/SingleChildScrollView不会延迟加载的滚动View/single_child_scroll_view_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Switch,Checkbox单选开关复选开关/switch_page.dart';
@@ -156,4 +157,9 @@ var singleChildScrollViewHandeler = Handler(
 var listViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ListViewPage();
+});
+
+var scrollControllerViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ScrollControllerPage();
 });
