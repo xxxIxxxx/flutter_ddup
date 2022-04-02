@@ -9,6 +9,7 @@ import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart
 import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/button_page.dart';
 import '../class/FittedBox空间适配/fitted_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
+import '../class/GridView二维网格列表/grid_view_page.dart';
 import '../class/Image图片/image_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
@@ -168,5 +169,10 @@ var scrollControllerViewHandeler = Handler(
 var animatedListHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const AnimatedListPage();
+});
+
+var gridViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const GridViewPage();
 });
 

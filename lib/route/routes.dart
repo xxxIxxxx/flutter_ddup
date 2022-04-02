@@ -33,6 +33,7 @@ class Routes {
   static String listView = "/listView";
   static String scrollController = "/scrollController";
   static String animatedList = "/animatedList";
+  static String gridView = "/gridView";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -68,5 +69,6 @@ class Routes {
     router.define(listView, handler: listViewHandeler);
     router.define(scrollController, handler: scrollControllerViewHandeler);
     router.define(animatedList, handler: animatedListHandeler);
+    router.define(gridView, handler: gridViewHandeler);
   }
 }

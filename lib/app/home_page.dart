@@ -212,7 +212,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   transition: TransitionType.native);
             },
             child: const Text("AnimatedList 动画列表"),
-          )
+          ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.gridView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("GridView 网格列表"),
+          ),
         ],
       ),
     );
