@@ -206,6 +206,13 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text(
                   "ScrollController, ScrollPosition, NotificationListener滚动监听")),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.animatedList,
+                  transition: TransitionType.native);
+            },
+            child: const Text("AnimatedList 动画列表"),
+          )
         ],
       ),
     );
