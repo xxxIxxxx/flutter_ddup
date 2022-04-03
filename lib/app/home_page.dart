@@ -234,6 +234,14 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("TabBarView,DefaultTabController 选项卡视图"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.customScrollView,
+                  transition: TransitionType.native);
+            },
+            child:
+                const Text("CustomScrollView Sliver 悬浮 NavBar Header 自定义滚动视图"),
+          ),
         ],
       ),
     );

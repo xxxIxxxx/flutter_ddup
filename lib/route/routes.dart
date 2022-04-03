@@ -36,6 +36,7 @@ class Routes {
   static String gridView = "/gridView";
   static String pageView = "/pageView";
   static String tabBarView = "/tabBarView";
+  static String customScrollView = "/customScrollView";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -74,5 +75,6 @@ class Routes {
     router.define(gridView, handler: gridViewHandeler);
     router.define(pageView, handler: pageViewHandeler);
     router.define(tabBarView, handler: tabBarViewHandeler);
+    router.define(customScrollView, handler: customScrollViewHandeler);
   }
 }

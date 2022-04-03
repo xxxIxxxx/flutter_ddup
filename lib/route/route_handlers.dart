@@ -5,6 +5,7 @@ import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/AnimatedList插入删除增加动画/animated_list_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
+import '../class/CustomScrollView和Slivers/custom_scroll_view_page.dart';
 import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart';
 import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/button_page.dart';
 import '../class/FittedBox空间适配/fitted_box_page.dart';
@@ -186,5 +187,10 @@ var pageViewHandeler = Handler(
 var tabBarViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const TabBarViewPage();
+});
+
+var customScrollViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const CustomScrollViewPage();
 });
 
