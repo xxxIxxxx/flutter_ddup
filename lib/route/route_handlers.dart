@@ -15,6 +15,7 @@ import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builde
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
 import '../class/ListView/list_view_page.dart';
 import '../class/Padding填充/padding_page.dart';
+import '../class/PageView,AutomaticKeepAliveClientMixin页面缓存/page_view_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
 import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
 import '../class/ScrollController,ScrollPosition,NotificationListener滚动监听/scroll_controller_page.dart';
@@ -174,5 +175,10 @@ var animatedListHandeler = Handler(
 var gridViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const GridViewPage();
+});
+
+var pageViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const PageViewPage();
 });
 

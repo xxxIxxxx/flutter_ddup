@@ -220,6 +220,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("GridView 网格列表"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.pageView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("PageView,AutomaticKeepAliveClientMixin页面缓存"),
+          ),
         ],
       ),
     );
