@@ -35,6 +35,7 @@ class Routes {
   static String animatedList = "/animatedList";
   static String gridView = "/gridView";
   static String pageView = "/pageView";
+  static String tabBarView = "/tabBarView";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -72,5 +73,6 @@ class Routes {
     router.define(animatedList, handler: animatedListHandeler);
     router.define(gridView, handler: gridViewHandeler);
     router.define(pageView, handler: pageViewHandeler);
+    router.define(tabBarView, handler: tabBarViewHandeler);
   }
 }

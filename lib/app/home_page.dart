@@ -227,6 +227,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("PageView,AutomaticKeepAliveClientMixin页面缓存"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.tabBarView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("TabBarView,DefaultTabController 选项卡视图"),
+          ),
         ],
       ),
     );

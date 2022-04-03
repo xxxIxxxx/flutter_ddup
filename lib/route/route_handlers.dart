@@ -22,6 +22,7 @@ import '../class/ScrollController,ScrollPosition,NotificationListener滚动监�
 import '../class/SingleChildScrollView不会延迟加载的滚动View/single_child_scroll_view_page.dart';
 import '../class/Stack,Positioned层叠布局/stack_positioned_page.dart';
 import '../class/Switch,Checkbox单选开关复选开关/switch_page.dart';
+import '../class/TabBarView/tab_bar_view_page.dart';
 import '../class/TextField,Form输入框及表单/text_field_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/Transform,RotatedBox变换旋转缩放/transform_rotated_box_page.dart';
@@ -180,5 +181,10 @@ var gridViewHandeler = Handler(
 var pageViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const PageViewPage();
+});
+
+var tabBarViewHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const TabBarViewPage();
 });
 
