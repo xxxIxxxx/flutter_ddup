@@ -37,6 +37,7 @@ class Routes {
   static String pageView = "/pageView";
   static String tabBarView = "/tabBarView";
   static String customScrollView = "/customScrollView";
+  static String nestedScrollView = "/nestedScrollView";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -76,5 +77,6 @@ class Routes {
     router.define(pageView, handler: pageViewHandeler);
     router.define(tabBarView, handler: tabBarViewHandeler);
     router.define(customScrollView, handler: customScrollViewHandeler);
+    router.define(nestedScrollView, handler: nestedScrollViewHandeler);
   }
 }

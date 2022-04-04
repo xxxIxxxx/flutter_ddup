@@ -242,6 +242,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child:
                 const Text("CustomScrollView Sliver 悬浮 NavBar Header 自定义滚动视图"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.nestedScrollView,
+                  transition: TransitionType.native);
+            },
+            child: const Text("NestedScrollView 嵌套滚动视图"),
+          ),
         ],
       ),
     );
