@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ddup/app/app_component.dart';
+import 'package:provider/provider.dart';
+
+import 'class/Provider跨组件共享状态/car_model.dart';
 
 void collectLog(String line) {
   //收集日志
@@ -17,7 +20,12 @@ void main() {
     reportErrorAndLog(details); //上报
   };
   runZoned(
-    () => runApp(const AppComponent()),
+    () {
+      runApp(ChangeNotifierProvider<Car>(
+        create: (_) => Car(),
+        child: const AppComponent(),
+      ));
+    },
     zoneSpecification: ZoneSpecification(
       // 拦截print 蜀西湖
       print: (Zone self, ZoneDelegate parent, Zone zone, String line) {

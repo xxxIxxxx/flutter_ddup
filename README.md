@@ -10,5 +10,6 @@
 
  [路由管理 fluro](https://github.com/lukepighetti/fluro)
 
-[资源管理 flutter_gen
-](https://github.com/FlutterGen/flutter_gen)
+[资源管理 flutter_gen](https://github.com/FlutterGen/flutter_gen)
+
+[状态管理 Provider](https://github.com/rrousselGit/provider)

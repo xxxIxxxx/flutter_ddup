@@ -263,6 +263,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("InheritedWidget 共享状态"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.provider,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Provider 状态管理"),
+          ),
         ],
       ),
     );

@@ -19,6 +19,7 @@ import '../class/ListView/list_view_page.dart';
 import '../class/NestedScrollView嵌套可滚动组件/nested_scroll_view_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/PageView,AutomaticKeepAliveClientMixin页面缓存/page_view_page.dart';
+import '../class/Provider跨组件共享状态/provider_page.dart';
 import '../class/Row,Column线性布局/row_page.dart';
 import '../class/Scaffold,AppBar,Drawer,FloatingActionButton,BottomNavigationBar/scaffold_app_bar_page.dart';
 import '../class/ScrollController,ScrollPosition,NotificationListener滚动监听/scroll_controller_page.dart';
@@ -202,16 +203,17 @@ var nestedScrollViewHandeler = Handler(
   return const NestedScrollViewPage();
 });
 
-
 var willPopScopeHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const WillPopScopePage();
 });
-
 
 var inheritedWidgetHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const InheritedWidgetPage();
 });
 
-
+var providerHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ProviderPage();
+});

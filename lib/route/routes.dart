@@ -40,7 +40,7 @@ class Routes {
   static String nestedScrollView = "/nestedScrollView";
   static String willPopScope = "/willPopScope";
   static String inheritedWidget = "/inheritedWidget";
-  
+  static String provider = "/provider";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -83,5 +83,6 @@ class Routes {
     router.define(nestedScrollView, handler: nestedScrollViewHandeler);
     router.define(willPopScope, handler: willPopScopeHandeler);
     router.define(inheritedWidget, handler: inheritedWidgetHandeler);
+    router.define(provider, handler: providerHandeler);
   }
 }

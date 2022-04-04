@@ -31,6 +31,8 @@ dependencies:
     sdk: flutter
   # 路由控制
   fluro: ^2.0.3
+  #状态管理
+  provider: ^6.0.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
