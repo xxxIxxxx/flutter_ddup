@@ -12,6 +12,7 @@ import '../class/FittedBox空间适配/fitted_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/GridView二维网格列表/grid_view_page.dart';
 import '../class/Image图片/image_page.dart';
+import '../class/InheritedWidget数据共享/inherited_widget_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
 import '../class/ListView/list_view_page.dart';
@@ -205,6 +206,12 @@ var nestedScrollViewHandeler = Handler(
 var willPopScopeHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const WillPopScopePage();
+});
+
+
+var inheritedWidgetHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const InheritedWidgetPage();
 });
 
 

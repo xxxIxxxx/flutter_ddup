@@ -256,6 +256,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("WillPopScope 控制返回"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.inheritedWidget,
+                  transition: TransitionType.native);
+            },
+            child: const Text("InheritedWidget 共享状态"),
+          ),
         ],
       ),
     );
