@@ -30,6 +30,7 @@ import '../class/Text文本及样式/text_page.dart';
 import '../class/Transform,RotatedBox变换旋转缩放/transform_rotated_box_page.dart';
 import '../class/UnconstrainedBox,ConstrainedBox,SizedBox约束布局/constraints_page.dart';
 import '../class/Warp,Flow流式布局/warp_flow_page.dart';
+import '../class/WillPopScope导航返回拦截/will_pop_scope_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
 
@@ -199,3 +200,11 @@ var nestedScrollViewHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const NestedScrollViewPage();
 });
+
+
+var willPopScopeHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const WillPopScopePage();
+});
+
+

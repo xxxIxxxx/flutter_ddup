@@ -38,6 +38,8 @@ class Routes {
   static String tabBarView = "/tabBarView";
   static String customScrollView = "/customScrollView";
   static String nestedScrollView = "/nestedScrollView";
+  static String willPopScope = "/willPopScope";
+  
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -78,5 +80,6 @@ class Routes {
     router.define(tabBarView, handler: tabBarViewHandeler);
     router.define(customScrollView, handler: customScrollViewHandeler);
     router.define(nestedScrollView, handler: nestedScrollViewHandeler);
+    router.define(willPopScope, handler: willPopScopeHandeler);
   }
 }

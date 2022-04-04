@@ -249,6 +249,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("NestedScrollView 嵌套滚动视图"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.willPopScope,
+                  transition: TransitionType.native);
+            },
+            child: const Text("WillPopScope 控制返回"),
+          ),
         ],
       ),
     );
