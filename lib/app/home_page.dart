@@ -277,6 +277,14 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Theme 主题 颜色"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(
+                  context, Routes.valueListenableBuilder,
+                  transition: TransitionType.native);
+            },
+            child: const Text("ValueListenableBuilder 值变化监听"),
+          ),
         ],
       ),
     );

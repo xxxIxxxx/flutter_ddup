@@ -31,6 +31,7 @@ import '../class/TextField,Form输入框及表单/text_field_page.dart';
 import '../class/Text文本及样式/text_page.dart';
 import '../class/Transform,RotatedBox变换旋转缩放/transform_rotated_box_page.dart';
 import '../class/UnconstrainedBox,ConstrainedBox,SizedBox约束布局/constraints_page.dart';
+import '../class/ValueListenableBuilder/value_listenable_builder_page.dart';
 import '../class/Warp,Flow流式布局/warp_flow_page.dart';
 import '../class/WillPopScope导航返回拦截/will_pop_scope_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
@@ -222,4 +223,10 @@ var providerHandeler = Handler(
 var themeHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ThemePage();
+});
+
+
+var valueListenableBuilderHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ValueListenableBuilderPage();
 });
