@@ -35,6 +35,7 @@ import '../class/Warp,Flow流式布局/warp_flow_page.dart';
 import '../class/WillPopScope导航返回拦截/will_pop_scope_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
+import '../class/颜色和主题/theme_page.dart';
 
 var homeHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
@@ -216,4 +217,9 @@ var inheritedWidgetHandeler = Handler(
 var providerHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ProviderPage();
+});
+
+var themeHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ThemePage();
 });

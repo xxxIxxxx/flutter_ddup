@@ -41,6 +41,7 @@ class Routes {
   static String willPopScope = "/willPopScope";
   static String inheritedWidget = "/inheritedWidget";
   static String provider = "/provider";
+  static String theme = "/theme";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -84,5 +85,6 @@ class Routes {
     router.define(willPopScope, handler: willPopScopeHandeler);
     router.define(inheritedWidget, handler: inheritedWidgetHandeler);
     router.define(provider, handler: providerHandeler);
+    router.define(theme, handler: themeHandeler);
   }
 }

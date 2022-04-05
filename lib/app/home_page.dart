@@ -270,6 +270,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Provider 状态管理"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.theme,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Theme 主题 颜色"),
+          ),
         ],
       ),
     );
