@@ -285,6 +285,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("ValueListenableBuilder 值变化监听"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.futureStream,
+                  transition: TransitionType.native);
+            },
+            child: const Text("FutureBuilder StreamBuilder 异步UI"),
+          ),
         ],
       ),
     );

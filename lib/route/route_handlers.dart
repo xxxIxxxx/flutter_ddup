@@ -10,6 +10,7 @@ import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart
 import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/button_page.dart';
 import '../class/FittedBox空间适配/fitted_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
+import '../class/FutureBuilder,StreamBuilder异步UI更新/future_stream_page.dart';
 import '../class/GridView二维网格列表/grid_view_page.dart';
 import '../class/Image图片/image_page.dart';
 import '../class/InheritedWidget数据共享/inherited_widget_page.dart';
@@ -225,8 +226,12 @@ var themeHandeler = Handler(
   return const ThemePage();
 });
 
-
 var valueListenableBuilderHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ValueListenableBuilderPage();
+});
+
+var futureStreamHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const FutureStreamPage();
 });

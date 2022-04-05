@@ -43,8 +43,7 @@ class Routes {
   static String provider = "/provider";
   static String theme = "/theme";
   static String valueListenableBuilder = "/valueListenableBuilder";
-  
-
+  static String futureStream = "/futureStream";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -89,6 +88,8 @@ class Routes {
     router.define(inheritedWidget, handler: inheritedWidgetHandeler);
     router.define(provider, handler: providerHandeler);
     router.define(theme, handler: themeHandeler);
-    router.define(valueListenableBuilder, handler: valueListenableBuilderHandeler);
+    router.define(valueListenableBuilder,
+        handler: valueListenableBuilderHandeler);
+    router.define(futureStream, handler: futureStreamHandeler);
   }
 }
