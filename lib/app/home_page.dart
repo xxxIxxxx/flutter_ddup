@@ -292,6 +292,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("FutureBuilder StreamBuilder 异步UI"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.alertDialog,
+                  transition: TransitionType.native);
+            },
+            child: const Text("AlertDialog 各种弹框 时间日期"),
+          ),
         ],
       ),
     );

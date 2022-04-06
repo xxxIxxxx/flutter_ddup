@@ -1,6 +1,8 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_ddup/app/home_page.dart';
+import '../class/AlertDialog各种弹框时间日期/alert_dialog_page.dart';
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/AnimatedList插入删除增加动画/animated_list_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
@@ -234,4 +236,9 @@ var valueListenableBuilderHandeler = Handler(
 var futureStreamHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const FutureStreamPage();
+});
+
+var alertDialogHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const AlertDialogPage();
 });
