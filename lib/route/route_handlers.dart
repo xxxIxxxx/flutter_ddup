@@ -13,6 +13,7 @@ import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/butto
 import '../class/FittedBox空间适配/fitted_box_page.dart';
 import '../class/Flex,Expanded,Spacer弹性布局/flex_expanded_page.dart';
 import '../class/FutureBuilder,StreamBuilder异步UI更新/future_stream_page.dart';
+import '../class/GestureDetector, GestureRecognizer手势识别/gesture_detector_recognizer_page.dart';
 import '../class/GridView二维网格列表/grid_view_page.dart';
 import '../class/Image图片/image_page.dart';
 import '../class/InheritedWidget数据共享/inherited_widget_page.dart';
@@ -247,4 +248,9 @@ var alertDialogHandeler = Handler(
 var listenerAbsorbBointerHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const ListenerAbsorbBointerPage();
+});
+
+var gestureDetectorRecognizerHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const GestureDetectorRecognizerPage();
 });

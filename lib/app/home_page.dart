@@ -307,6 +307,14 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Listener AbsorbBointer 指针事件"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(
+                  context, Routes.gestureDetectorRecognizer,
+                  transition: TransitionType.native);
+            },
+            child: const Text("GestureDetector 手势检测"),
+          ),
         ],
       ),
     );
