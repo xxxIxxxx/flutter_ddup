@@ -19,6 +19,7 @@ import '../class/InheritedWidget数据共享/inherited_widget_page.dart';
 import '../class/LayoutBuilder获取父组件传递的约束信息/layout_builder_page.dart';
 import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度指示器/progress_page.dart';
 import '../class/ListView/list_view_page.dart';
+import '../class/Listener,AbsorbPointer原始指针事件处理/listener_absorb_bointer_page.dart';
 import '../class/NestedScrollView嵌套可滚动组件/nested_scroll_view_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/PageView,AutomaticKeepAliveClientMixin页面缓存/page_view_page.dart';
@@ -241,4 +242,9 @@ var futureStreamHandeler = Handler(
 var alertDialogHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const AlertDialogPage();
+});
+
+var listenerAbsorbBointerHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const ListenerAbsorbBointerPage();
 });

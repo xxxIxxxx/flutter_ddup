@@ -45,6 +45,7 @@ class Routes {
   static String valueListenableBuilder = "/valueListenableBuilder";
   static String futureStream = "/futureStream";
   static String alertDialog = "/alertDialog";
+  static String listenerAbsorbBointer = "/listenerAbsorbBointer";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -93,5 +94,7 @@ class Routes {
         handler: valueListenableBuilderHandeler);
     router.define(futureStream, handler: futureStreamHandeler);
     router.define(alertDialog, handler: alertDialogHandeler);
+    router.define(listenerAbsorbBointer,
+        handler: listenerAbsorbBointerHandeler);
   }
 }

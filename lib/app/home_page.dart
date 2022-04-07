@@ -299,6 +299,14 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("AlertDialog 各种弹框 时间日期"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(
+                  context, Routes.listenerAbsorbBointer,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Listener AbsorbBointer 指针事件"),
+          ),
         ],
       ),
     );
