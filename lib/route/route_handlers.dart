@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ddup/app/home_page.dart';
 import '../class/AlertDialog各种弹框时间日期/alert_dialog_page.dart';
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
+import '../class/AnimatedBuilder,AnimationController动画/animation_page.dart';
 import '../class/AnimatedList插入删除增加动画/animated_list_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
@@ -265,4 +266,9 @@ var eventBusHandeler = Handler(
 var notificationHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const NotificationPage();
+});
+
+var animationHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const AnimationPage();
 });

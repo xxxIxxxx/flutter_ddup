@@ -49,6 +49,7 @@ class Routes {
   static String gestureDetectorRecognizer = "/gestureDetectorRecognizer";
   static String eventBus = "/eventBus";
   static String notification = "/notification";
+  static String animation = "/animation";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -103,5 +104,6 @@ class Routes {
         handler: gestureDetectorRecognizerHandeler);
     router.define(eventBus, handler: eventBusHandeler);
     router.define(notification, handler: notificationHandeler);
+    router.define(animation, handler: animationHandeler);
   }
 }
