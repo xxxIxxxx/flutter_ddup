@@ -48,7 +48,7 @@ class Routes {
   static String listenerAbsorbBointer = "/listenerAbsorbBointer";
   static String gestureDetectorRecognizer = "/gestureDetectorRecognizer";
   static String eventBus = "/eventBus";
-  
+  static String notification = "/notification";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -99,7 +99,9 @@ class Routes {
     router.define(alertDialog, handler: alertDialogHandeler);
     router.define(listenerAbsorbBointer,
         handler: listenerAbsorbBointerHandeler);
-    router.define(gestureDetectorRecognizer, handler: gestureDetectorRecognizerHandeler);
+    router.define(gestureDetectorRecognizer,
+        handler: gestureDetectorRecognizerHandeler);
     router.define(eventBus, handler: eventBusHandeler);
+    router.define(notification, handler: notificationHandeler);
   }
 }

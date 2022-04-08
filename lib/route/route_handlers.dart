@@ -22,6 +22,7 @@ import '../class/LinearProgressIndicator,CircularProgressIndicator,Timer进度�
 import '../class/ListView/list_view_page.dart';
 import '../class/Listener,AbsorbPointer原始指针事件处理/listener_absorb_bointer_page.dart';
 import '../class/NestedScrollView嵌套可滚动组件/nested_scroll_view_page.dart';
+import '../class/Notification通知/notification_page.dart';
 import '../class/Padding填充/padding_page.dart';
 import '../class/PageView,AutomaticKeepAliveClientMixin页面缓存/page_view_page.dart';
 import '../class/Provider跨组件共享状态/provider_page.dart';
@@ -259,4 +260,9 @@ var gestureDetectorRecognizerHandeler = Handler(
 var eventBusHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const EventBusPage();
+});
+
+var notificationHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const NotificationPage();
 });

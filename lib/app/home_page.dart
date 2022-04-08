@@ -322,6 +322,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("EventBus 事件总线，单例"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.notification,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Notification 通知"),
+          ),
         ],
       ),
     );
