@@ -336,6 +336,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("AnimatedBuilder,AnimationController 动画"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.hero,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Hero 动画"),
+          ),
         ],
       ),
     );
