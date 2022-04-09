@@ -343,6 +343,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("Hero 动画"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.animationGroup,
+                  transition: TransitionType.native);
+            },
+            child: const Text("交织动画  动画组"),
+          ),
         ],
       ),
     );

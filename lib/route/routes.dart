@@ -51,6 +51,8 @@ class Routes {
   static String notification = "/notification";
   static String animation = "/animation";
   static String hero = "/hero";
+  static String animationGroup = "/animationGroup";
+  
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -107,5 +109,6 @@ class Routes {
     router.define(notification, handler: notificationHandeler);
     router.define(animation, handler: animationHandeler);
     router.define(hero, handler: heroHandeler);
+    router.define(animationGroup, handler: animationGroupHandeler);
   }
 }

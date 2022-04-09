@@ -44,6 +44,7 @@ import '../class/Warp,Flow流式布局/warp_flow_page.dart';
 import '../class/WillPopScope导航返回拦截/will_pop_scope_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/事件总线及单例/event_bus_page.dart';
+import '../class/交织动画/animation_group_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
 import '../class/颜色和主题/theme_page.dart';
 
@@ -277,4 +278,9 @@ var animationHandeler = Handler(
 var heroHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const HeroPage();
+});
+
+var animationGroupHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const AnimationGroupPage();
 });
