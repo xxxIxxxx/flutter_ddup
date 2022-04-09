@@ -355,7 +355,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.animatedSwitcher,
                   transition: TransitionType.native);
             },
-            child: const Text("AnimatedSwitcher 动画切换"),
+            child: const Text("AnimatedSwitcher 动画切换  动画过渡组件"),
           ),
         ],
       ),
