@@ -6,6 +6,7 @@ import '../class/AlertDialog各种弹框时间日期/alert_dialog_page.dart';
 import '../class/Align,Center对齐与相对定位/align_center_page.dart';
 import '../class/AnimatedBuilder,AnimationController动画/animation_page.dart';
 import '../class/AnimatedList插入删除增加动画/animated_list_page.dart';
+import '../class/AnimatedSwitcher动画切换组件/animated_switcher_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
 import '../class/CustomScrollView和Slivers/custom_scroll_view_page.dart';
@@ -283,4 +284,9 @@ var heroHandeler = Handler(
 var animationGroupHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const AnimationGroupPage();
+});
+
+var animatedSwitcherHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const AnimatedSwitcherPage();
 });

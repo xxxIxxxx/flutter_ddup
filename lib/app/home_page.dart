@@ -350,6 +350,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("交织动画  动画组"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.animatedSwitcher,
+                  transition: TransitionType.native);
+            },
+            child: const Text("AnimatedSwitcher 动画切换"),
+          ),
         ],
       ),
     );
