@@ -364,6 +364,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("自己实现渐变色按钮 InkWell 涟漪组件"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.customPaintCanvas,
+                  transition: TransitionType.native);
+            },
+            child: const Text("自绘组件 CustomPaint Canvas"),
+          ),
         ],
       ),
     );

@@ -54,6 +54,7 @@ class Routes {
   static String animationGroup = "/animationGroup";
   static String animatedSwitcher = "/animatedSwitcher";
   static String gradientBtn = "/gradientBtn";
+  static String customPaintCanvas = "/customPaintCanvas";
   
 
   static void configureRoutes(FluroRouter router) {
@@ -114,5 +115,6 @@ class Routes {
     router.define(animationGroup, handler: animationGroupHandeler);
     router.define(animatedSwitcher, handler: animatedSwitcherHandeler);
     router.define(gradientBtn, handler: gradientBtnHandeler);
+    router.define(customPaintCanvas, handler: customPaintCanvasHandeler);
   }
 }

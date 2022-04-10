@@ -9,6 +9,7 @@ import '../class/AnimatedList插入删除增加动画/animated_list_page.dart';
 import '../class/AnimatedSwitcher动画切换组件,动画过渡组件/animated_switcher_page.dart';
 import '../class/Clip剪切组件/clip_page.dart';
 import '../class/Container组件/container_page.dart';
+import '../class/CustomPaint与Canvas/custom_paint_canvas_page.dart';
 import '../class/CustomScrollView和Slivers/custom_scroll_view_page.dart';
 import '../class/DecoratedBox装饰容器渐变边框等/decorated_box_page.dart';
 import '../class/ElevatedButton,TextButton,OutlinedButton,IconButton按钮/button_page.dart';
@@ -297,3 +298,7 @@ var gradientBtnHandeler = Handler(
   return const GradientBtnPage();
 });
 
+var customPaintCanvasHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const CustomPaintCanvasPage();
+});
