@@ -53,6 +53,8 @@ class Routes {
   static String hero = "/hero";
   static String animationGroup = "/animationGroup";
   static String animatedSwitcher = "/animatedSwitcher";
+  static String gradientBtn = "/gradientBtn";
+  
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -111,5 +113,6 @@ class Routes {
     router.define(hero, handler: heroHandeler);
     router.define(animationGroup, handler: animationGroupHandeler);
     router.define(animatedSwitcher, handler: animatedSwitcherHandeler);
+    router.define(gradientBtn, handler: gradientBtnHandeler);
   }
 }

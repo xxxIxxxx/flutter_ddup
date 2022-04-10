@@ -357,6 +357,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("AnimatedSwitcher 动画切换  动画过渡组件"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.gradientBtn,
+                  transition: TransitionType.native);
+            },
+            child: const Text("自己实现渐变色按钮 InkWell 涟漪组件"),
+          ),
         ],
       ),
     );
