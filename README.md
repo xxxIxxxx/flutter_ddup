@@ -13,3 +13,7 @@
 [资源管理 flutter_gen](https://github.com/FlutterGen/flutter_gen)
 
 [状态管理 Provider](https://github.com/rrousselGit/provider)
+
+[文件管理 path_provider](https://pub.flutter-io.cn/packages/path_provider)
+
+[简便的本地数据管理 shared_preferences](https://pub.flutter-io.cn/packages/shared_preferences)

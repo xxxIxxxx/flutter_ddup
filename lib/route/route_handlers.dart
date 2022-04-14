@@ -47,6 +47,7 @@ import '../class/WillPopScope导航返回拦截/will_pop_scope_page.dart';
 import '../class/widget生命周期/counter_life_cycle_page.dart';
 import '../class/事件总线及单例/event_bus_page.dart';
 import '../class/交织动画/animation_group_page.dart';
+import '../class/文件操作/file_path_page.dart';
 import '../class/自绘组件/custom_widget_page.dart';
 import '../class/自行实现渐变色按钮 InkWell涟漪组件/gradient_btn_page.dart';
 import '../class/路由传值/tipRoute_page.dart';
@@ -307,4 +308,10 @@ var customPaintCanvasHandeler = Handler(
 var customWidgetHandeler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
   return const CustomWidgetPage();
+});
+
+
+var filePathHandeler = Handler(
+    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+  return const FilePathPage();
 });

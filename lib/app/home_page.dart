@@ -378,6 +378,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("自绘组件"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.filePath,
+                  transition: TransitionType.native);
+            },
+            child: const Text("文件管理，数据读取"),
+          ),
         ],
       ),
     );

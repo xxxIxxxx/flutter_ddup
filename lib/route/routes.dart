@@ -56,6 +56,7 @@ class Routes {
   static String gradientBtn = "/gradientBtn";
   static String customPaintCanvas = "/customPaintCanvas";
   static String customWidget = "/customWidget";
+  static String filePath = "/filePath";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -117,5 +118,6 @@ class Routes {
     router.define(gradientBtn, handler: gradientBtnHandeler);
     router.define(customPaintCanvas, handler: customPaintCanvasHandeler);
     router.define(customWidget, handler: customWidgetHandeler);
+    router.define(filePath, handler: filePathHandeler);
   }
 }
