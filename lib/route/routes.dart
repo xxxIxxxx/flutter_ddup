@@ -55,7 +55,7 @@ class Routes {
   static String animatedSwitcher = "/animatedSwitcher";
   static String gradientBtn = "/gradientBtn";
   static String customPaintCanvas = "/customPaintCanvas";
-  
+  static String customWidget = "/customWidget";
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -116,5 +116,6 @@ class Routes {
     router.define(animatedSwitcher, handler: animatedSwitcherHandeler);
     router.define(gradientBtn, handler: gradientBtnHandeler);
     router.define(customPaintCanvas, handler: customPaintCanvasHandeler);
+    router.define(customWidget, handler: customWidgetHandeler);
   }
 }

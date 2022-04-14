@@ -371,6 +371,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("自绘组件 CustomPaint Canvas"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.customWidget,
+                  transition: TransitionType.native);
+            },
+            child: const Text("自绘组件"),
+          ),
         ],
       ),
     );
