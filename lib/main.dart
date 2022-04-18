@@ -1,10 +1,19 @@
 import 'dart:async';
-
+import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ddup/app/app_component.dart';
 import 'package:provider/provider.dart';
-
 import 'class/Provider跨组件共享状态/car_model.dart';
+
+// Must be top-level function
+_parseAndDecode(String response) {
+  return jsonDecode(response);
+}
+
+parseJson(String text) {
+  return compute(_parseAndDecode, text);
+}
 
 void collectLog(String line) {
   //收集日志

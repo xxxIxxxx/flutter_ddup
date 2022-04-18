@@ -17,3 +17,11 @@
 [文件管理 path_provider](https://pub.flutter-io.cn/packages/path_provider)
 
 [简便的本地数据管理 shared_preferences](https://pub.flutter-io.cn/packages/shared_preferences)
+
+[http dio](https://pub.dev/packages/dio)
+
+[json解析 json_serializable](https://pub.dev/packages/json_serializable)
+
+[json解析 json_annotation](https://pub.dev/packages/json_annotation)
+
+

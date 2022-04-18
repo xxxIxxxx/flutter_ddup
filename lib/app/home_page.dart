@@ -385,6 +385,13 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: const Text("文件管理，数据读取"),
           ),
+          TextButton(
+            onPressed: () {
+              Application.router.navigateTo(context, Routes.http,
+                  transition: TransitionType.native);
+            },
+            child: const Text("Dio 网络请求"),
+          ),
         ],
       ),
     );

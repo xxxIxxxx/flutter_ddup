@@ -57,6 +57,8 @@ class Routes {
   static String customPaintCanvas = "/customPaintCanvas";
   static String customWidget = "/customWidget";
   static String filePath = "/filePath";
+  static String http = "/http";
+
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -119,5 +121,6 @@ class Routes {
     router.define(customPaintCanvas, handler: customPaintCanvasHandeler);
     router.define(customWidget, handler: customWidgetHandeler);
     router.define(filePath, handler: filePathHandeler);
+    router.define(http, handler: httpHandeler);
   }
 }
